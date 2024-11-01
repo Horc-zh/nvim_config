@@ -6,14 +6,16 @@
 return {
   "AstroNvim/astrocommunity",
   -- lauguage package
-  -- { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.cpp" },
+  -- { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.pack.python" },
   -- theme
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.colorscheme.everforest" },
+  { import = "astrocommunity.colorscheme.rose-pine" },
   -- motion
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.flash-nvim" },

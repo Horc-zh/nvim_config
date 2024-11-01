@@ -48,7 +48,36 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
+      -- c/c++
       clangd = { capabilities = { offsetEncoding = "utf-8" } },
+
+      -- rust
+      -- not work, why?
+      -- rust_analyzer = {
+      --   cargo = {
+      --     allFeatures = true,
+      --     loadOutDirsFromCheck = true,
+      --     runBuildScripts = true,
+      --   },
+      settings = {
+        ["rust-analyzer"] = {
+          cargo = {
+            allFeatures = true,
+            target = "nightly",
+          },
+          checkOnSave = true,
+          procMacro = {
+            enable = true,
+            ignored = {
+              ["async-trait"] = { "async_trait" },
+              ["napi-derive"] = { "napi" },
+              ["async-recursion"] = { "async_recursion" },
+            },
+          },
+        },
+      },
+      --
+      -- other lsp
     },
     -- customize how language servers are attached
     handlers = {

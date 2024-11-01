@@ -16,8 +16,10 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
-vim.o.guifont = "Hack Nerd Font"
+vim.o.guifont = "Hack Nerd Font:h13"
+vim.g.neovide_transparency = 0.95
 vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 
 require "lazy_setup"
 require "polish"
