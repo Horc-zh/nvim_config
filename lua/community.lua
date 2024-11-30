@@ -7,20 +7,33 @@
 return {
   "AstroNvim/astrocommunity",
   -- language packages
+  -- lua
   --{ import = "astrocommunity.pack.lua" },
+  -- rust
   { import = "astrocommunity.pack.rust" },
+
+  -- cpp
   { import = "astrocommunity.pack.cpp" },
-  -- import/override with your plugins folder
+
+  -- markdown
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.media.img-clip-nvim" },
+
+  -- theme
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.colorscheme.rose-pine" },
+
   -- motion
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.flash-nvim" },
-  -- vim
+
+  -- notify
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.utility.noice-nvim" },
+
   -- xmake
   {
     "Mythos-404/xmake.nvim",
@@ -28,5 +41,12 @@ return {
     lazy = true,
     event = "BufReadPost",
     config = true,
-  }
+  },
+
+  -- leetcode-nvim
+  { import = "astrocommunity.game.leetcode-nvim" },
+
+  -- flatten-nvim
+  { import = "astrocommunity.terminal-integration.flatten-nvim" },
+
 }
