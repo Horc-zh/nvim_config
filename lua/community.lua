@@ -47,6 +47,9 @@ return {
   { import = "astrocommunity.game.leetcode-nvim" },
 
   -- flatten-nvim
+  { import = "astrocommunity.recipes.vscode" },
+
+  -- vscode-neovim
   { import = "astrocommunity.terminal-integration.flatten-nvim" },
 
 }
