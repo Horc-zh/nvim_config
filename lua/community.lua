@@ -1,4 +1,3 @@
-
 -- AstroCommunity: import any community modules here
 -- We import this file in `lazy_setup.lua` before the `plugins/` folder.
 -- This guarantees that the specs are processed before any user plugins.
@@ -7,18 +6,19 @@
 return {
   "AstroNvim/astrocommunity",
   -- language packages
+
   -- lua
-  --{ import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.lua" },
   -- rust
   { import = "astrocommunity.pack.rust" },
-
   -- cpp
   { import = "astrocommunity.pack.cpp" },
-
   -- markdown
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.media.img-clip-nvim" },
+  -- lua
+  { import = "astrocommunity.pack.python" },
 
   -- theme
   { import = "astrocommunity.colorscheme.catppuccin" },
@@ -51,5 +51,4 @@ return {
 
   -- vscode-neovim
   { import = "astrocommunity.terminal-integration.flatten-nvim" },
-
 }
