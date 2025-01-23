@@ -77,5 +77,5 @@
   "venv-selector.nvim": { "branch": "regexp", "commit": "e82594274bf7b54387f9a2abe65f74909ac66e97" },
   "vim-illuminate": { "branch": "master", "commit": "5eeb7951fc630682c322e88a9bbdae5c224ff0aa" },
   "which-key.nvim": { "branch": "main", "commit": "fb070344402cfc662299d9914f5546d840a22126" },
-  "xmake.nvim": { "branch": "main", "commit": "6a50fe0db3aaca25b029425c0d6337f90a4badd3" }
+  "xmake.nvim": { "branch": "main", "commit": "594dfe0c73f133848c917c0c848f6bb3f3400345" }
 }
