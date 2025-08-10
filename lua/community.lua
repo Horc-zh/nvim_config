@@ -17,6 +17,7 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.media.img-clip-nvim" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   -- lua
   { import = "astrocommunity.pack.python" },
 
@@ -46,7 +47,6 @@ return {
   -- leetcode-nvim
   { import = "astrocommunity.game.leetcode-nvim" },
 
-  -- vscode-neovim
   { import = "astrocommunity.recipes.vscode" },
 
   -- flatten-nvim

@@ -10,6 +10,9 @@ return {
       shellxquote = "",
       scrolloff = 0,
     }
+    -- local powershell_options = {
+    --   shell = "nu",
+    -- }
 
     for option, value in pairs(powershell_options) do
       vim.opt[option] = value
